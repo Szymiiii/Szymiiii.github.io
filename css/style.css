@@ -125,7 +125,6 @@ header {
   stroke-linejoin: round;
 }
 
-/* W domyślnym trybie ciemnym widoczne jest Słońce, a Księżyc jest ukryty */
 .theme-toggle .icon-sun {
   display: block;
 }
@@ -133,7 +132,6 @@ header {
   display: none;
 }
 
-/* W trybie jasnym widoczny jest Księżyc, a Słońce jest ukryte */
 body.light-mode .theme-toggle .icon-sun {
   display: none;
 }

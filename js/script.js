@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Dynamic Active Navigation Highlighting based on filename
+  // Dynamic Active Navigation Highlighting based on filename
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     const linkPath = link.getAttribute('href');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Theme Toggle Management (Dark / Light) with localStorage
+  // Theme Toggle Management (Dark / Light) with localStorage
   const themeToggle = document.querySelector('.theme-toggle');
   const body = document.body;
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Mobile Navigation Toggle (Hamburger)
+  // Mobile Navigation Toggle (Hamburger)
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Dynamic Copyright Year Injection
+  // Dynamic Copyright Year Injection
   const yearSpan = document.getElementById('current-year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
